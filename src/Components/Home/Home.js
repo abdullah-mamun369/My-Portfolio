@@ -1,4 +1,5 @@
 import React from 'react';
+import About from './Home Children/About';
 import HeroBanner from './Home Children/HeroBanner';
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <section>
                 <HeroBanner></HeroBanner>
+                <About></About>
             </section>
         </div>
     );
