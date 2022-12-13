@@ -2,6 +2,31 @@
     background-image: url(../../assets/banner.png);
 }
 
+
+.paragraph-design::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    left: -50px;
+    top: 38px;
+    width: 30px;
+    background-color: #ffb400;
+    box-sizing: border-box;
+    z-index: 50;
+}
+
+.paragraph-design::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    left: 500px;
+    top: 38px;
+    width: 30px;
+    background-color: #ffb400;
+    box-sizing: border-box;
+    z-index: 50;
+}
+
 /* .button-section {
     color: white;
     padding: 10px 20px;
