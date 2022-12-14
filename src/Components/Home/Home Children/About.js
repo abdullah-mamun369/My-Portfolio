@@ -3,7 +3,6 @@ import '../Home.css'
 import aboutImg from "../../../assets/about-img.png"
 import myresume from '../../../assets/resume.pdf'
 import { FaDownload } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -16,7 +15,7 @@ const About = () => {
             </div>
 
             <div className='container mx-auto grid grid-cols-2 gap-4'>
-                <div className='image-design before:animate-spin'>
+                <div className='image-design'>
                     <img className='w-5/6 image-design ' src={aboutImg} alt="" />
                 </div>
                 <div className='grid grid-cols-2 gap-4 mt-28'>
