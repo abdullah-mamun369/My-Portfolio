@@ -1,5 +1,6 @@
 import React from 'react';
 import About from './Home Children/About';
+import Contact from './Home Children/Contact';
 import HeroBanner from './Home Children/HeroBanner';
 import Portfolio from './Home Children/Portfolio';
 
@@ -9,7 +10,8 @@ const Home = () => {
             <section>
                 <HeroBanner></HeroBanner>
                 <About></About>
-                <Portfolio></Portfolio>
+                {/* <Portfolio></Portfolio> */}
+                <Contact></Contact>
             </section>
         </div>
     );

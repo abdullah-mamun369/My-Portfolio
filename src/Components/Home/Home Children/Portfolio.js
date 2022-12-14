@@ -13,12 +13,12 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <Tab.Group>
-                    <Tab.List className={'text-white'}>
+                    <Tab.List className={'flex space-x-1 rounded-xl bg-blue-900/20 p-1'}>
                         <Tab>Tab 1</Tab>
                         <Tab>Tab 2</Tab>
                         <Tab>Tab 3</Tab>
                     </Tab.List>
-                    <Tab.Panels className={'text-white'}>
+                    <Tab.Panels className={'text-white text-center'}>
                         <Tab.Panel>Content 1</Tab.Panel>
                         <Tab.Panel>Content 2</Tab.Panel>
                         <Tab.Panel>Content 3</Tab.Panel>
