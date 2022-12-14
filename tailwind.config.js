@@ -4,7 +4,7 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        doctotheme: {
+        portfoliotheme: {
           primary: '#ffb400',
           secondary: '#8E5B00',
           accent: '#282828',
