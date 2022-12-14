@@ -73,13 +73,13 @@ const Contact = () => {
                         <p className='mb-5'>If you have any suggestion, project or even you want to say Hello.. please fill out the form <br /> below and I will reply you shortly.</p>
                         <form className='grid gap-5' onSubmit={handleSubmit}>
                             <div className='grid grid-cols-2 gap-8'>
-                                <input className='h-12 p-5 border border-[#444] bg-[#333] rounded-full uppercase font-extralight text-sm' type="text" {...register("name", { required: 'Name required' })} placeholder="Your Name" ></input>
-                                <input className='h-12 p-5 border border-[#444] bg-[#333] rounded-full uppercase font-extralight text-sm' type="email" {...register("email", { required: 'Email required' })} placeholder="Your Email" ></input>
+                                <input className='h-12 p-5 border border-[#444] bg-[#333] rounded-full font-extralight text-sm' type="text" {...register("name", { required: 'Name required' })} placeholder="Your name" ></input>
+                                <input className='h-12 p-5 border border-[#444] bg-[#333] rounded-full font-extralight text-sm' type="email" {...register("email", { required: 'Email required' })} placeholder="Your email" ></input>
                             </div>
                             <div>
-                                <textarea className="textarea textarea-bordered w-full p-5 border border-[#444] bg-[#333] rounded-3xl uppercase font-extralight text-sm h-44" placeholder="Your Message"></textarea>
+                                <textarea className="textarea textarea-bordered w-full p-5 border border-[#444] bg-[#333] rounded-3xl font-extralight text-sm h-44" placeholder="Your message"></textarea>
                             </div>
-                            <PrimaryBtn><TbMessages className='mr-3 text-xl'></TbMessages>Send Message</PrimaryBtn>
+                            <PrimaryBtn><TbMessages className='mr-3 text-xl'></TbMessages>Send message</PrimaryBtn>
                         </form>
                     </div>
                 </div>
