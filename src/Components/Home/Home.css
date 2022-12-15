@@ -47,8 +47,35 @@
     width: 630px;
 }
 
-/* .button-section {
+/* portfolioProject css */
+.portfolio-sample {
+    top: 0;
+    left: 0;
+    transform: translate(-0, -0);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    background: #3a3a3a;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    padding: 10px 20px;
-    border-radius: 30px;
-} */
+    text-align: center;
+}
+
+.portfolio-sample:hover .overlay {
+    opacity: 1;
+}
