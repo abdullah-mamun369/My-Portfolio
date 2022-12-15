@@ -18,7 +18,7 @@ const Portfolio = () => {
     const { data: categories = [] } = useQuery({
         queryKey: ['categories',],
         queryFn: async () => {
-            const res = await fetch('http://localhost:1000/categories');
+            const res = await fetch('https://my-portfolio-server-topaz.vercel.app/categories');
             const data = await res.json();
             return data
         }
@@ -26,7 +26,7 @@ const Portfolio = () => {
     const { data: allProjects = [] } = useQuery({
         queryKey: ['projects',],
         queryFn: async () => {
-            const res = await fetch('http://localhost:1000/projects');
+            const res = await fetch('https://my-portfolio-server-topaz.vercel.app/projects');
             const data = await res.json();
             return data
         }
@@ -36,7 +36,7 @@ const Portfolio = () => {
     const getCategory = (category) => {
         const projectCategory = category.category;
         console.log(projectCategory);
-        fetch(`http://localhost:1000/projects/?category=${projectCategory}`)
+        fetch(`https://my-portfolio-server-topaz.vercel.app/projects/?category=${projectCategory}`)
             .then(res => res.json())
             .then(data => setProjects(data))
     }
